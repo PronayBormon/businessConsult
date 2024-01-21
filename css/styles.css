@@ -32,6 +32,9 @@ body::-webkit-scrollbar {
     color: #000;
     font-size: 16px;
     font-weight: 400;
+    text-align: center;
+    line-height: 20px;
+    display: block;
 }
 
 .navbar {
@@ -49,7 +52,7 @@ body::-webkit-scrollbar {
 
 .navbar-brand img {
 
-    max-width: 250px;
+max-width: 222px;
 }
 
 .navbar-nav {}
@@ -572,11 +575,26 @@ a:hover {
 .tab_hide {
     display: block;
 }
+.nav_show {
+    display: none;
+}
+.nav_hide{
+    display: block;
+}
+@media(max-width: 992px){
+    .nav_show {
+        display: block;
+    }
+    .nav_hide{
+        display: none;
+    }
+}
 
 @media(max-width: 768px) {
     .tab_hide {
         display: none;
     }
+    
 }
 
 /* navigationsection start here  */
